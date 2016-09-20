@@ -1,8 +1,7 @@
 " vim: ts=4 sw=4 et
 
 function! neomake#makers#ft#scss#EnabledMakers() abort
-    return executable('stylelint') ? ['stylelint'] : \
-           executable('sass-lint') ? ['sasslint'] : ['scsslint']
+    return ['stylelint']
 endfunction
 
 function! neomake#makers#ft#scss#sasslint() abort
